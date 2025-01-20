@@ -5,6 +5,6 @@ int main() {
     int m,n,o;
     scanf("%d %d %d",&m,&n,&o);
     int sum = n+m+o;
-    printf("Average: %.2f",sum/3);
+    printf("Average: %f",sum/3);
     return 0;
 }

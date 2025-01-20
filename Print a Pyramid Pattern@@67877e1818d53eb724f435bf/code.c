@@ -4,13 +4,13 @@ int main() {
     int row;
     int i;
     scanf("%d",&row);
-    for(i=row;i>0;i--){
+    for(i=1;i<=row;i++){
         int j;
         for(j=0;j<(row-i);j++){
             printf(" ");
         }
         int k;
-        for(k=0;k<i;k++){
+        for(k=0;k<(2*i+1);k++){
             printf("*");
         }
         printf("\n");

@@ -7,10 +7,9 @@ int main() {
     for(i=rown;i>0;i--){
         int j;
         for(j=0;j<=i;j++){
-            printf("*")
+            printf("*");
         }
-        printf("\n")
+        printf("\n");
     }
-    printf("%s", welcome());
     return 0;
 }

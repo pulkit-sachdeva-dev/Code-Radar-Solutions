@@ -7,8 +7,8 @@ int main() {
     scanf("%d",&rown);
     for(i=rown;i>0;i--){
         int j;
-        for(j=0;j<=i;j++){
-            printf("*");
+        for(j=0;j<i;j++){
+            printf("* ");
         }
         printf("\n");
     }

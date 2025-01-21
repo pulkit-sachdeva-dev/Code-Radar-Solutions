@@ -4,7 +4,6 @@
 int main() {
     int row;
     int i;
-    printf("enter ; ");
     scanf("%d",&row);
     for(i=0;i<row;i++){
         printf("*");

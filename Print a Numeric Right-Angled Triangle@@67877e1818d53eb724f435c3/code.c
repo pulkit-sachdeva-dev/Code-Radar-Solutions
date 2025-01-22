@@ -6,8 +6,12 @@ int main() {
     int i;
     scanf("%d",row);
     for(i=1;i<=row;i++){
-        printf("%d",i);
+        int j;
+        for(j=1;j<=i;j++){
+            printf("%d",i);
+        }
+        printf("\n");
     }
-    printf("\n");
+   
     return 0;
 }

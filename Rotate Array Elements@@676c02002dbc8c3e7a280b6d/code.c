@@ -13,7 +13,7 @@ int main() {
     scanf("%d",&size);
     int nums[size];
     for(int i =0 ; i < size; i++){
-        scanf("%d",nums[i]);
+        scanf("%d",&nums[i]);
     }
     scanf("%d",&k);
     if(k>size){

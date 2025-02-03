@@ -10,6 +10,7 @@ void reverse(int arr[], int si , int ei ){
 
 int main() {
     int size,k;
+    scanf("%d",&size);
     int nums[size];
     for(int i =0 ; i < size; i++){
         scanf("%d",nums[i]);

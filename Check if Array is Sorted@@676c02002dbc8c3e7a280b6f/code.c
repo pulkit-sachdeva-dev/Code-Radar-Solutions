@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    int size;
+    int size, flag = 1;
     scanf("%d",&size);
     int arr[size];
     for(int i = 0; i < size; i++){
@@ -9,10 +9,13 @@ int main(){
     }
     for(int i = 0; i < size; i++){
         if(arr[i] > arr[i+1]){
-            printf("Not Sorted");
+            flag = 0;
             break;
         }
-    }else{
+    }
+    if(flag == 1){
         printf("Sorted");
+    }else{
+        printf("Not Sorted");
     }
 }

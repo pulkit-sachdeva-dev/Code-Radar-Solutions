@@ -12,7 +12,7 @@ int main(){
             flag = arr[i];
             break;
         }
-        if(i == size){
+        if(i == size-1){
             flag = arr[i];
         }
     }

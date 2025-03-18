@@ -1,10 +1,11 @@
 #include <stdio.h>
+#include <limits.h>
 
 int main(){
     int size;
     scanf("%d",&size);
-    int arr[size] = {0};
-    int max = arr[0], min = arr[0];
+    int arr[size];
+    int max = INT_MAX, min = INT_MIN;
     for(int i = 0; i < size; i++){
         scanf("%d",&arr[i]);
         if(arr[i]>max){

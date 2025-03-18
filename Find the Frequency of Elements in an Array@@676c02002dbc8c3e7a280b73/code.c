@@ -10,7 +10,7 @@ int main(){
     }
     for(int i = 0; i < size; i++){
         int count = 1;
-        if(freq[i] != 1){
+        if(freq[i] != 0){
             for(int j = i+1; j < size; j++){
                 if(arr[i] == arr[j]){
                     freq[j] = 0;

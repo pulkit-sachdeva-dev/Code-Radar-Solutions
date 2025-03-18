@@ -5,11 +5,9 @@ int main(){
     int size;
     scanf("%d",&size);
     int arr[size];
-    int max = INT_MAX, min = INT_MIN;
+    int max = INT_MIN, min = INT_MAX;
     for(int i = 0; i < size; i++){
         scanf("%d",&arr[i]);
-    }
-    for(int i = 0; i < size; i++){
         if(arr[i]>max){
             max = arr[i];
         }

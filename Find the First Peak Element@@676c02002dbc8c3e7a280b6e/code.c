@@ -12,9 +12,6 @@ int main(){
             flag = arr[i];
             break;
         }
-        if(i == size-1){
-            flag = arr[i];
-        }
     }
     printf("%d",flag);
 }

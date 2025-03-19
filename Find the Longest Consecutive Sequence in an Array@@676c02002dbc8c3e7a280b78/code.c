@@ -9,9 +9,9 @@ int main(){
         scanf("%d",&arr[i]);
     }
     for(int i = 0; i < size; i++){
-        int temp = arr[i];
         for(int j = i+1; j < size; j++){
-            if(temp < arr[j]){
+            if(arr[i] < arr[j]){
+                int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
             }

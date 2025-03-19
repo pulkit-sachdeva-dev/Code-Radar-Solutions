@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <limits.h>
 
 int main(){
 
@@ -9,18 +8,20 @@ int main(){
     for(int i = 0 ; i < size; i++){
         scanf("%d",&arr[i]);
     }
-    int min = INT_MAX;
     for(int i = 0; i < size; i++){
-        if(arr[i] < min){
-            min = arr[i];
+        int temp = arr[i];
+        for(int j = i+1; j < size; j++){
+            if(arr[j] < temp){
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
         }
     }
-    for(int i = 0; i < size; i++){
-        if(arr[i] == min+1){
-            count++;
-            min = arr[i];
-        }
+    for(int i = 0; i < size; i++){  
+        count++;
+        if(arr[i+1] != arr[i] + 1) break;
     }
     printf("%d",count);
+    
     return 0;
 }

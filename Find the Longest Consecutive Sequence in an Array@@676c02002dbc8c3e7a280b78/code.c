@@ -11,7 +11,7 @@ int main(){
     for(int i = 0; i < size; i++){
         int temp = arr[i];
         for(int j = i+1; j < size; j++){
-            if(arr[j] < temp){
+            if(temp < arr[j]){
                 arr[i] = arr[j];
                 arr[j] = temp;
             }

@@ -26,7 +26,7 @@ int main(){
         if(freq[i] > size/2){
             printf("%d",arr[i]);
         }else if(i == size - 1){
-            printf("-1");
+            printf(-1);
         }
         break;
     }

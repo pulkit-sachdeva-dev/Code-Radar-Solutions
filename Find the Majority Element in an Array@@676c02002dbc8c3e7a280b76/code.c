@@ -23,8 +23,8 @@ int main(){
     }
     for(int i = 0 ; i < size; i++){
         if(freq[i] > size/2) printf("%d",arr[i]);
-        else printf("-1");
     }
+    printf("-1");
 
     return 0; 
 }

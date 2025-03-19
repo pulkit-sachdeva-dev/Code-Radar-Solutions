@@ -21,10 +21,13 @@ int main(){
             freq[i] = count;
         } 
     }
+    int flag = 0;
     for(int i = 0 ; i < size; i++){
-        if(freq[i] > size/2) printf("%d",arr[i]);
+        if(freq[i] > size/2) flag = i;
+        break;
     }
-    printf("-1");
+    if(flag) printf("-1");
+    else printf("%d",arr[flag]);
 
     return 0; 
 }

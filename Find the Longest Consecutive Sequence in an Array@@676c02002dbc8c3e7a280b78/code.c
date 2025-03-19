@@ -18,8 +18,8 @@ int main(){
         }
     }
     for(int i = 0; i < size; i++){  
-        count++;
         if(arr[i+1] != arr[i] + 1) break;
+        count++;
     }
     printf("%d",count);
     

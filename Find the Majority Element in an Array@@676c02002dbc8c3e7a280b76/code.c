@@ -25,10 +25,11 @@ int main(){
     for(int i = 0 ; i < size; i++){
         if(freq[i] > size/2){
             printf("%d",arr[i]);
+            break;
         }else if(i == size - 1){
             printf("-1");
         }
-        break;
+        
     }
 
     return 0; 

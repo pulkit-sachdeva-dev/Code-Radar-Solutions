@@ -24,7 +24,7 @@ int main(){
         printf("%d\n",arr[i]);
         suma += arr[i];
     }
-    printf("%d\n%d",min,suma); 
+    printf("%d\n%d",min,sum); 
 
     return 0;
 }

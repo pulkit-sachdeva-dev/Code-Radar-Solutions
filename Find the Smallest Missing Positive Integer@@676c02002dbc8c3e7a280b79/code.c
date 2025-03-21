@@ -20,7 +20,7 @@ int main(){
     for(int i = 0; i < size; i++){
         suma += arr[i];
     }
-    printf("%d",sum-suma); 
+    printf("%d\n%d",min,sum-suma); 
 
     return 0;
 }

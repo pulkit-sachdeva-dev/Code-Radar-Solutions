@@ -6,7 +6,9 @@ int main(){
     int arr[size];
     for(int i = 0; i < size; i++){
         scanf("%d",&arr[i]);
-        if(arr[i] < 0) i--;
+        if(arr[i] < 0){
+            i--;
+        };
     }
     
     size = sizeof(arr)/sizeof(arr[0]);
@@ -22,7 +24,7 @@ int main(){
         printf("%d\n",arr[i]);
         suma += arr[i];
     }
-    printf("%d\n%d",min,sum-suma); 
+    printf("%d\n%d",min,suma); 
 
     return 0;
 }

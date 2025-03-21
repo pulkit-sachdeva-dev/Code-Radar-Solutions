@@ -11,7 +11,7 @@ int main(){
         };
     }
     
-    size = sizeof(arr)/sizeof(arr[0]);
+    size = sizeof(arr[])/sizeof(arr[0]);
     printf("Size %d",size);
     int min = arr[0];
     for(int i = 0; i < size; i++){

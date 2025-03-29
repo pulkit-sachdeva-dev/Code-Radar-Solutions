@@ -24,12 +24,12 @@ int main(){
     int flag = 0;
     for(int i = idx ; i < size; i++){
         if(arr[i+1] != arr[i]+1){
-            flag = 1;
+            flag = i;
             break;
         }
     }
     if(flag){
-        printf("%d",arr[i]+1);
+        printf("%d",arr[flag]+1);
     }else{
         printf("%d",arr[size-1]+1);
     }

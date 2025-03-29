@@ -6,26 +6,27 @@ int main(){
     int arr[size];
     for(int i = 0; i < size; i++){
         scanf("%d",&arr[i]);
-        if(arr[i] < 0){
-            i--;
-        };
     }
-    
-    size = sizeof(arr)/sizeof(arr[0]);
-    printf("Size %d",size);
-    int min = arr[0];
-    for(int i = 0; i < size; i++){
-        if(arr[i] < min){
-            min = arr[i];
+    // sorting 
+    for(int i = 0 ; i < size; i++){
+        for(int j = i + 1 ; j < size; j++){
+            if(arr[i]>arr[j]){
+                int temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
         }
     }
-    int sum = (size/2)*((2*min + (size-1)));
-    int suma = 0;
-    for(int i = 0; i < size; i++){
-        printf("%d\n",arr[i]);
-        suma += arr[i];
+    int idx = 0; 
+    while(arr[idx] < 0){
+        idx++;
     }
-    printf("%d\n%d",min,sum); 
+    for(int i = idx ; i < size; i++){
+        if(arr[i+1] != arr[i]+1){
+            printf("%d",arr[i]+1);
+            break;
+        }
+    }
 
     return 0;
 }

@@ -22,8 +22,8 @@ int main(){
         idx++;
     }
     int flag = 0;
-    for(int i = idx ; i < size; i++){
-        if(arr[i+1] != arr[i]+1){
+    for(int i = idx, j = 1 ; i < size; i++, j++){
+        if(arr[i] != j){
             flag = i;
             break;
         }

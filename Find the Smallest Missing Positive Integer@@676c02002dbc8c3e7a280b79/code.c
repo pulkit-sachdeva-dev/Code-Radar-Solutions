@@ -31,7 +31,7 @@ int main(){
     if(flag){
         printf("%d",flag);
     }else{
-        printf("%d",1);
+        printf("1");
     }
 
     return 0;

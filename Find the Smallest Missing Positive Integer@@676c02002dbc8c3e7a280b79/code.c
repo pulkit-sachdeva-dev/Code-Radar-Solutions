@@ -18,7 +18,7 @@ int main(){
         }
     }
     int idx = 0; 
-    while(arr[idx] <= 0){
+    while(arr[idx] <= 0 && idx != size){
         idx++;
     }
     int flag = 0;

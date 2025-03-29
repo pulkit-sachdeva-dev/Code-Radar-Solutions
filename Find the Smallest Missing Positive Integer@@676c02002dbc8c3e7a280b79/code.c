@@ -18,7 +18,7 @@ int main(){
         }
     }
     int idx = 0; 
-    while(arr[idx] <= 0 && idx != size){
+    while(arr[idx] <= 0){
         idx++;
     }
     int flag = 0;
@@ -31,7 +31,7 @@ int main(){
     if(flag){
         printf("%d",flag);
     }else{
-        printf("%d",arr[size-1]+1);
+        printf("%d",1);
     }
 
     return 0;

@@ -21,11 +21,17 @@ int main(){
     while(arr[idx] < 0){
         idx++;
     }
+    int flag = 0;
     for(int i = idx ; i < size; i++){
         if(arr[i+1] != arr[i]+1){
-            printf("%d",arr[i]+1);
+            flag = 1;
             break;
         }
+    }
+    if(flag){
+        printf("%d",arr[i]+1);
+    }else{
+        printf("%d",arr[size-1]+1);
     }
 
     return 0;

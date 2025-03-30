@@ -9,7 +9,7 @@ int main(){
     }
     for(int i = 0; i < size; i++){
         if(arr[i] == 0){
-            for(int j = i ; j < size; j++){
+            for(int j = i ; j < size-1; j++){
                 arr[j] = arr[j+1];
             }
             arr[size-1] = 0;

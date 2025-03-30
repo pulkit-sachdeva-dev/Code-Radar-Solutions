@@ -4,7 +4,7 @@
 
 int main(){
     int size; 
-    scanfi("%d",&size);
+    scanf("%d",&size);
     int arr[size];
     int prime = 0;
     for(int i = 0 ; i < size; i++){

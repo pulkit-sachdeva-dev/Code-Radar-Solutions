@@ -16,7 +16,7 @@ int main(){
                 break;
             }
         }
-    }else{
+    }else if(arr[1]<arr[0]){
         for(int i = 1 ; i < size; i++){
             if(arr[i+1] > arr[i]){
                 printf("NO");

@@ -9,7 +9,7 @@ int main(){
     }
     int flag = 1;
     if(arr[1]>arr[0]){
-        for(int i = 1 ; i < size; i++){
+        for(int i = 1 ; i < size-1; i++){
             if(arr[i+1] < arr[i]){
                 printf("NO");
                 flag = 0;
@@ -17,9 +17,9 @@ int main(){
             }
         }
     }else if(arr[1]<arr[0]){
-        for(int i = 1 ; i < size; i++){
+        for(int i = 1 ; i < size-1; i++){
             if(arr[i+1] > arr[i]){
-                printf("NO %d",i);
+                printf("NO");
                 flag = 0;
                 break;
             }

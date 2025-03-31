@@ -11,7 +11,7 @@ int main(){
     if(arr[1]>arr[0]){
         for(int i = 1 ; i < size; i++){
             if(arr[i+1] < arr[i]){
-                printf("NO1");
+                printf("NO");
                 flag = 0;
                 break;
             }
@@ -19,7 +19,7 @@ int main(){
     }else{
         for(int i = 1 ; i < size; i++){
             if(arr[i+1] > arr[i]){
-                printf("NO2");
+                printf("NO");
                 flag = 0;
                 break;
             }

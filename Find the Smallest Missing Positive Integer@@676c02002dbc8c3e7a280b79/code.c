@@ -23,7 +23,7 @@ int main(){
     }
     int flag = 0;
     for(int i = idx, j = 1 ; i < size; i++, j++){
-        if(arr[i] != j && j != size-1){
+        if(arr[i] != j && i != size-1){
             flag = j;
             break;
         }else if(arr[i] == j && i == size-1){

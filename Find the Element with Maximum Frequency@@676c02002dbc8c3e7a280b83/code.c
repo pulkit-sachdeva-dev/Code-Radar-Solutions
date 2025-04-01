@@ -25,7 +25,7 @@ int main(){
     int max = freq[0];
     int mI = 0;
     for(int i = 1; i < size; i++){
-        if(arr[i] > max){
+        if(freq[i] > max){
             max = freq[i];
             mI = i;
         }

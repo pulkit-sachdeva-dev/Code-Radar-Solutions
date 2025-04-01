@@ -2,7 +2,7 @@
 
 int palindrome(int n){
     int str[20];
-    sprintf(str,"%d",num);
+    sprintf(str,"%d",n);
     int s = sizeof[str]/sizeof[0];
     for(int i = 0, j= size-1; i < j; i++,j--){
         if(str[i] != str[j]){

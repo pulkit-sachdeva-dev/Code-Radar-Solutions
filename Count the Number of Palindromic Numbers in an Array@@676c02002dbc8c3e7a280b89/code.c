@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int palindrome(int n){
     char str[20];
     sprintf(str,"%d",n);
-    int s = sizeof(str)/sizeof(0);
+    int s = strlen(str);
     for(int i = 0, j= s-1; i < j; i++,j--){
         if(str[i] != str[j]){
             return 0;

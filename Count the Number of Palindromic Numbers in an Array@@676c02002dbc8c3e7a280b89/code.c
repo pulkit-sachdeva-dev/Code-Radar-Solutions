@@ -18,7 +18,7 @@ int main(){
     int arr[size];
     int count = 0;
     for(int i = 0; i< size; i++){
-        scnaf("%d",&arr[i]);
+        scanf("%d",&arr[i]);
     }
     for(int i = 0; i < size; i++){
         if(palindrome(arr[i])) count++ ;

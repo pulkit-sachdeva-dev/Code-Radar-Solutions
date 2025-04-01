@@ -22,13 +22,13 @@ int main(){
         
         freq[i] = count;
     }
-    int max = freq[0];
+    int max_idx = freq[0];
     for(int i = 1; i < size; i++){
         if(arr[i] > max){
-            max = freq[i];
+            max_idx = i;
         }
     }
-    printf("%d",max);
+    printf("%d",arr[max_idx]);
 
 
     return 0;

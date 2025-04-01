@@ -26,7 +26,7 @@ int main(){
         if(arr[i] != j && j != size-1){
             flag = j;
             break;
-        }else if(arr[i] == j && j == size-1){
+        }else if(arr[i] == j && i == size-1){
             flag = j+1;
             break;
         }

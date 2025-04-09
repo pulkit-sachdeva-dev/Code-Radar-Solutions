@@ -7,7 +7,7 @@ int main() {
     fgets(str, sizeof(str), stdin);
 
     for (i = 0; str[i] != '\0'; i++) {
-        if(str[i+1] == '\0') break;
+        if(str[i] == '\0') break;
         if (str[i] == ' ' && str[i + 1] != ' ' && str[i + 1] != '\0') {
             words++;
         }
